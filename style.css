@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background-color: #c6e1fb;
+}
+.sidebar{
+    position: absolute;
+    background-color: #6C63FF;
+    width: 170px; 
+    font-family: serif;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+}
+
+.sidebar nav{
+    padding: 20px;
+}
+.sidebar nav li{
+    list-style: none;
+    font-size: 20px;
+    padding: 30px 0;
+}
+.sidebar nav li a{
+    color: black;
+    text-decoration: none;
+}
+
+.main{
+    width: 90%;
+    /*background-color: yellow;*/
+    
+}
+
+.container{
+    display: flex;
+}
+
+.infoContainer{
+   /* background-color: green;*/
+    height: 58%;
+    width: 80%;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.devInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: monospace;
+}
+.hello{
+    font-size: 65px;
+}
+.name{
+    font-size: 50px;
+    font-weight: bold;
+}
+.about{
+    font-size: 40px; 
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid black; /* Optional blinking cursor effect */
+    animation: about 5s steps(13, end)  infinite, blink 0.7s step-end infinite;
+}
+
+@keyframes about{
+    0% { width: 0; }
+    50% { width: 13ch; }
+    100% { width: 0; } /* 'Web Developer' has 13 characters including space */
+}
+
+.moreabout{
+    font-size: 20px;
+    font-family: serif;
+    margin-top: 23px;
+}
+.buttons{
+    margin-top: 25px;
+}
+.buttons button{
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 21px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+.buttons button:hover{
+    background-color: white;
+    color: dodgerblue;
+    box-shadow: 0 4px 8px black;
+}
+
+.btn{
+    width: 25%;
+}
+.devPic img{
+    height: 50vh;
+    margin-top: 50px;
+    border-radius: 40%;
+    margin-left: 50px;
+}
+
+.devPic img:hover{
+    box-shadow: 0 4px 8px black;
+}
+
+.contactform{
+    font-family: serif;
+    padding: 0 34px;
+    padding-top: 100px; 
+    margin: 0 100px;
+    
+}
+
+.contactform h1{
+    font-family: monospace;
+     padding: 12px 0;
+}
+
+.contactform form div{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+.contactform form div input{
+    width: 25%;
+    height: 25%;
+    border-radius: 7px;
+    margin: 6px 0 0 0;
+    padding: 5px;
+}
+
+#emailHelp{
+    color: midnightblue;
+    font-size: 15px;
+    margin: 0 5px;
+
+}
+
+#query{
+    width:25%;
+    height: 70%;
+    padding: 5px;
+    margin: 6px 0 0 0; 
+    font-family: serif;
+    font-size: 14px;
+}
+
+.info{
+    margin: 90px 100px;
+}
+
+.info p{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.info h2{
+    margin-top: 20px;
+}
+
+.skillcontainer{
+    padding: 12px;
+    margin-top: 15px;
+    font-size: 18px;
+}
+/* .skillItem{
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+    
+} */
+.skill{
+    width: 265px;
+    height: 10px;
+    background-color: red;
+    border: 2px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    
+}
+.skillfifty{
+    width: 75px;
+    height: 10px;
+    background-color: yellow;
+    border: 2px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+.sidebarGo{
+    transform: translate(-443px , 0px);
+    position: absolute;
+} 
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.cross{
+    margin-left: 130px;
+    margin-top: 5px;
+}
+
+
+@media (min-width: 300px) and (max-width: 768px) {
+    .infoContainer {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+    
+    
+    .devInfo {
+      font-size: 2.5rem;
+    }
+
+    .devpic {
+        margin: 20px auto;
+        max-width: 80%;
+        height: auto;
+    }
+    .moreabout {
+      font-size: 1.5rem;
+    }
+  
+    .buttons {
+      justify-content: center;
+      gap: 20px;
+    }
+}
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+    .contactform {
+      padding: 1rem;
+      margin: 1rem;
+    }
+  
+    .contactform h1 {
+      font-size: 1.4rem;
+    }
+  
+    .btn {
+      width: 100%;
+      padding: 0.8rem;
+      font-size: 1rem;
+    }
+  }
+
+  
