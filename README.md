@@ -20,3 +20,5 @@ Simple and clean UI design
 2. CSS3 (including Flexbox and media queries)
 
 3. JavaScript (for interactivity like the toggle menu)
+
+Author - Jyotsna Mahajan
